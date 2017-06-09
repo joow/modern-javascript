@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "author": "Benoît Giraudou <bgiraudou@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "babel-node src"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.2"

@@ -39,3 +39,23 @@ Puis configurer Babel afin d'utiliser les réglages que vous venez d'installer e
     {
         "presets": ["env"]
     }
+
+## 04 - Sources
+
+Créer un répertoire `src` à la racine du projet et placer un fichier index.js contenant le code suivant :
+
+    console.log('Hello, World')
+
+Ajouter un script au fichier `package.json`, cela vous permettra d'exécuter des commandes à l'aide de `yarn` et vous évitera d'utiliser un exécuteur de tâches comme `Grunt` ou `Gulp` (inutiles en 2017) :
+
+    "scripts": {
+        "start": "babel-node src"
+    }
+
+Notez que vous pourriez lancer manuellement `babel-node` mais comme nous ne l'avons pas installé en global (bien !) il faudrait taper :
+
+    nodes_modules/babel-cli/bin/babel-node.js src
+
+alors que désormais nous avons juste à taper :
+
+    yarn start
