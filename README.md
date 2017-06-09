@@ -59,3 +59,31 @@ Notez que vous pourriez lancer manuellement `babel-node` mais comme nous ne l'av
 alors que désormais nous avons juste à taper :
 
     yarn start
+
+## 06 - Prettier
+
+[Prettier](https://github.com/prettier/prettier) est un formateur de code JavaScript (et autres) qui offre peu de configuration, ce qui est bien car cela évite de trop longues discussions !
+
+    yarn add --dev prettier
+
+Ajouter un script `pretty` au fichier `package.json` :
+
+    "pretty": "prettier --no-semi --single-quote --write src/**/*.js"
+
+Exécuter `yarn pretty` afin que vos fichiers soient correctement formatés.
+
+## 07 - ESLint
+
+    *TBD*
+
+## 08 - Flow
+
+    *TBD*
+
+## 09 - Jest
+
+    *TBD*
+
+## 10 - Paquet
+
+    *TBD*

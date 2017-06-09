@@ -4,10 +4,12 @@
   "author": "Benoît Giraudou <bgiraudou@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src"
+    "start": "babel-node src",
+    "pretty": "prettier --no-semi --single-quote --write src/**/*.js"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.5.2"
+    "babel-preset-env": "^1.5.2",
+    "prettier": "^1.4.4"
   }
 }
