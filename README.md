@@ -15,3 +15,14 @@ Par exemple avec nvm :
     nvm ls-remote               # affiche les versions disponibles
     nvm install v6.11.0         # installe la dernière version LTS
     nvm alias default lts/boron # utilise par défaut la dernière version LTS
+
+## 02 - Yarn
+
+[Yarn](https://yarnpkg.com) est un gestionnaire de dépendances.
+Il est plus performant et plus fiable que le gestionnaire de paquets `npm` fourni avec `Node` mais la version 5 de `npm` a 
+permis de combler le retard entre les deux gestionnaires. Libre à vous désormais d'utiliser `yarn` et `npm` (version 5).
+
+La première chose à faire est d'initialiser le projet en créant un fichier `package.json` qui contient la description du projet, ses dépendances, ses scripts et bien d'autres choses (plus ou moins équivalent au fichier `pom.xml` pour les développeurs Java).
+
+    yarn init # initialise le descripteur du projet
+    
